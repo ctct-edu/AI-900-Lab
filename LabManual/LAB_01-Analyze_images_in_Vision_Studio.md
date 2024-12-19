@@ -26,7 +26,7 @@ Azure AI Visionには、画像の内容やコンテキストを分析して情�
 
 このタスクでは、Azure AI Visionを使用するためにAzure AI Servicesの**マルチサービスリソース**を作成します。
 
-1. [**Azure portal**](https://portal.azure.com)にサインインします。
+1. Skillableのラボウィンドウで確認、取得したアカウント情報を使用して [**Azure portal**](https://portal.azure.com)にサインインします。
 
     >**注:** ツアーが開始された（"Microsoft Azureへようこそ"等の表示）場合は、"キャンセル"をクリックしてAzure Portalへ移動します。
 

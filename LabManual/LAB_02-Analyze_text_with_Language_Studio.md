@@ -26,7 +26,7 @@ Azure AI Servicesには自然言語処理(Natural Language Processing)を実行�
 
 このタスクでは、自然言語機能を使用するために **Language** リソースを作成します。
 
-1. [**Azure portal**](https://portal.azure.com)にサインインします。
+1. Skillableのラボウィンドウで確認、取得したアカウント情報を使用して [**Azure portal**](https://portal.azure.com)にサインインします。
 
     >**注:** ツアーが開始された（"Microsoft Azureへようこそ"等の表示）場合は、"キャンセル"をクリックしてAzure Portalへ移動します。
 
