@@ -12,7 +12,7 @@ Azure AI Servicesには自然言語処理(Natural Language Processing)を実行�
 
 このラボではLanguage Studioを使用してテキストに対する自然言語分析の機能を確認します。
 
-## 推定時間 : 40 分
+## 推定時間 : 30 分
 
 ## ラボ環境の起動
 
