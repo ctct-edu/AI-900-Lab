@@ -51,7 +51,7 @@ Azure AI Visionには、画像の内容やコンテキストを分析して情�
 
     ※検証が完了しない、もしくは失敗する場合は今回の内容では名前が原因の可能性があります。基本タブに戻り、名前を別の値に変更してください。
 
-1. リソースの作成が完了したら、 **[リソースへ移動]** をクリックして、作成した **Azure AI services multi-service account** の画面へ移動します。
+1. リソースの作成が完了したら、 **[リソースに移動]** をクリックして、作成した **Azure AI services multi-service account** の画面へ移動します。
 ## タスク 2 : Vision Studioへのアクセス
 
 ひとつ前のタスクで作成したAzure AI services multi-service accountをVision Studioに接続し、サービスへアクセスします。 
@@ -59,6 +59,8 @@ Azure AI Visionには、画像の内容やコンテキストを分析して情�
 1. ブラウザでAzure Portalとは別のタブを使用して、[Vision Studio](https://portal.vision.cognitive.azure.com/)にアクセスします。 
 
 1. 移動したVision Studioのページで右上の **Sign in** をクリックしてサインインします。
+
+    再度アカウント情報が求められた場合は、Azure Portalへのサインインに使用したSkillable発行のアカウント情報を入力します。
 
     ※ポップアップが表示された場合はそのまま閉じて進めてください
 
