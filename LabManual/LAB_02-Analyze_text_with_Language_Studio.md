@@ -79,7 +79,7 @@ Azure AI Servicesには自然言語処理(Natural Language Processing)を実行�
 
 このタスクではLanguage Studio上でテキスト感情(Sentiment)分析を実行します。顧客からのレビューに対してのポジティブ/ネガティブな意見を分類していきます。
 
-1. Language Studioのトップ画面から **[Classify text]** タブを選択し、 **[Analyze sentiment and opinions]** のタイルをクリックします。
+1. Language Studioのトップ画面から **[Classify text]** タブを選択し、 **[Analyze sentiment and mine opinions]** のタイルをクリックします。
 
    ![](./media/lab2/lang3-1.png)
 
