@@ -66,18 +66,6 @@ Azure AI Visionには、画像の内容やコンテキストを分析して情�
 
     ![](./media/lab1/vision2-1.png)
 
-1. 画面中央の **[View all resources]** をクリックします。
-
-    ![](./media/lab1/vision2-2.png)
-
-1. 表示された一覧の中から先ほどのタスクで作成したリソースを選択します。
-
-    ![](./media/lab1/vision2-3.png)
-
-1. 選択後は画面下部の **[Select as default resource]** をクリックします。
-
-1. ボタンをクリックした後は右上の×ボタンをクリックして **Select a resource to work with** の画面を閉じます。
-
 ## タスク 3 : イメージのキャプションを作成する
 
 先ほどリソースを関連付けたVision Studio上で画像のキャプションを作成していきます。
@@ -86,47 +74,59 @@ Azure AI Visionには、画像の内容やコンテキストを分析して情�
 
    ![](./media/lab1/vision3-3.png)
 
-2. **[Try it out]** の項目に表示されているチェックボックスを **オン（チェックを入れる）** にします。
+1. **[Try it out]** の項目に表示されているリンク **Please select a resource.** をクリックします。
+   ![](./media/lab1/vision3-8.png)
 
-3. 以下のリンクを使用してファイルをダウンロードします。ダウンロードしたzipファイルは展開してから使用します。
+   以下の内容で使用するリソースを設定します。
+
+   | パラメーター       | 値                                                           |
+   | ------------------ | ------------------------------------------------------------ |
+   | Azure subscription | ※既定値（ドロップダウンリストから選択）                      |
+   | Azure Resources    | ※前のタスクで作成したリソース（表示されない場合、横の更新ボタンをクリック） |
+
+   confirmボタンをクリックし、設定画面を閉じます。
+
+   チェックボックスがクリックできるようになっているので、 **オン（チェックを入れる）** にします。
+
+1. 以下のリンクを使用してファイルをダウンロードします。ダウンロードしたzipファイルは展開してから使用します。
 
    [https://aka.ms/mslearn-images-for-analysis](https://aka.ms/mslearn-images-for-analysis  )
 
    ※zipファイルが展開されていない場合はファイルアップロード時に選択することができません
 
-4. **[Browse for a file]** をクリックして、先ほどダウンロードしたファイルの中から **[store-camera-1.jpg]** を選択します。
+1. **[Browse for a file]** をクリックして、先ほどダウンロードしたファイルの中から **[store-camera-1.jpg]** を選択します。
 
    ![](./media/lab1/vision3-4.png)
 
-5. **[Detected attributes]** の項目を確認して、画像に対して生成されたキャプションを確認します。
+1. **[Detected attributes]** の項目を確認して、画像に対して生成されたキャプションを確認します。
 
    ![](./media/lab1/vision3-5.png)
 
-6. 同様の手順でstore-camera-2.jpg、store-camera-3.jpg、store-camera-4.jpgをアップロードして、同じく生成されたキャプションの内容を確認します。
+1. 同様の手順でstore-camera-2.jpg、store-camera-3.jpg、store-camera-4.jpgをアップロードして、同じく生成されたキャプションの内容を確認します。
 
-7. 別の方法でキャプションを生成するために、一度 **Add captions to images** の画面を閉じます。
+1. 別の方法でキャプションを生成するために、一度 **Add captions to images** の画面を閉じます。
 
    ![](./media/lab1/vision3-6.png)
 
-8. Vision Studioのトップ画面から **[Add dense captions to images]** のタイルをクリックします。
+1. Vision Studioのトップ画面から **[Add dense captions to images]** のタイルをクリックします。
 
-9. **[Try it out]** の項目に表示されているチェックボックスが **オン（チェックを入れる）** になっていることを確認します。
+1. **[Try it out]** の項目に表示されているチェックボックスが **オン（チェックを入れる）** になっていることを確認します。
 
-10. **[Browse for a file]** をクリックして、先ほどと同様にダウンロードしたファイルの中から **[store-camera-1.jpg]** を選択します。
+1. **[Browse for a file]** をクリックして、先ほどと同様にダウンロードしたファイルの中から **[store-camera-1.jpg]** を選択します。
 
-11. **[Detected attributes]** の項目を確認して、画像に対して生成されたキャプションを確認します。先ほどとは異なり、画像内の複数項目を認識してキャプションが生成されています。
+1. **[Detected attributes]** の項目を確認して、画像に対して生成されたキャプションを確認します。先ほどとは異なり、画像内の複数項目を認識してキャプションが生成されています。
 
     ![](./media/lab1/vision3-7.png)
 
-12. 同様の手順でstore-camera-2.jpg、store-camera-3.jpg、store-camera-4.jpgをアップロードして、同じく生成されたキャプションの内容を確認します。
+1. 同様の手順でstore-camera-2.jpg、store-camera-3.jpg、store-camera-4.jpgをアップロードして、同じく生成されたキャプションの内容を確認します。
 
-13. **Add dense captions to images** の画面を閉じます。
+1. **Add dense captions to images** の画面を閉じます。
 
 ## タスク 4 : イメージのタグ付け
 
 このタスクでは画像に対してタグ付けを行います。画像内の景色や物体を認識して、タグを生成します。
 
-1. Vision Studioのトップ画面から**[Extract common tags from images]** のタイルをクリックします。
+1. Vision Studioのトップ画面から **[Extract common tags from images]** のタイルをクリックします。
 
 2. **[Try it out]** の項目に表示されているチェックボックスが **オン（チェックを入れる）** になっていることを確認します。
 
@@ -146,7 +146,7 @@ Azure AI Visionには、画像の内容やコンテキストを分析して情�
 
 このタスクではイメージに含まれる物体の検出を行う機能をテストします。
 
-1. Vision Studioのトップ画面から**[Detect common object in images]** のタイルをクリックします。
+1. Vision Studioのトップ画面から **[Detect common object in images]** のタイルをクリックします。
 
 2. **[Try it out]** の項目に表示されているチェックボックスが **オン（チェックを入れる）** になっていることを確認します。
 
