@@ -26,7 +26,7 @@ Azure AI Servicesには自然言語処理(Natural Language Processing)を実行�
 
 このタスクでは、Azure AI Languageを使用するために**プロジェクト** を作成します。 Azure AI Foundry では、プロジェクトを作業の整理を行うためのコンテナーとして使用します。
 
-1. Skillableのラボウィンドウで確認、取得したアカウント情報を使用して [**Azure AI Foundry Poratl**](https://ai.azure.com/managementCenter/allResources)にサインインします。
+1. Skillableのラボウィンドウで確認、取得したアカウント情報を使用して [**Azure AI Foundry Portal**](https://ai.azure.com/managementCenter/allResources)にサインインします。
 
    >**注:** ツアーやチュートリアルが表示される場合は、"キャンセル"もしくはポップアップの×ボタンをクリックして閉じます。
 

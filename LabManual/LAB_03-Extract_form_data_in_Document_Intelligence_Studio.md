@@ -4,7 +4,7 @@ lab:
   module: Module04 Knowledge Mining
 ---
 
-# ラボ 03 - Document Intelligence Studio を使用してドキュメントを分析する
+# ラボ 03 - Document Intelligenceを使用してドキュメントを分析する
 
 ## ラボ概要
 
@@ -18,44 +18,61 @@ Azure AI Document Intelligence は、フォームやドキュメントから情�
 
 このラボでは[Skillable](https://alh.learnondemand.net/)にて以下のラボを起動して実施してください。
 
-​	**Extract form data in Document Intelligence Studio**
+​	**Extract data from documents in Azure AI Foundry portal (JA) / Azure AI Foundry ポータルのドキュメントからデータを抽出する **
 
-​	AI-900T00-A Microsoft Azure AI Fundamentals [Cloud Slice Provided], Learning Path 04 (CSS)
+​	AI-900T00-A Microsoft Azure AI Fundamentals [Cloud Slice Provided] JAPANESE, Learning Path 04 (CSS)
 
-## タスク1 : ドキュメントインテリジェンスリソースの作成
+1. ## タスク1 : プロジェクトの作成
 
-このタスクでは、Document Intelligence Studioにアクセスし、ドキュメントインテリジェンスリソースを作成します。
+   このタスクでは、Document Intelligenceを使用するために**プロジェクト** を作成します。 Azure AI Foundry では、プロジェクトを作業の整理を行うためのコンテナーとして使用します。
 
-1. ブラウザを使用して[Document Intelligence Studio](https://documentintelligence.ai.azure.com/studio)にアクセスします。
+   1. Skillableのラボウィンドウで確認、取得したアカウント情報を使用して [**Azure AI Foundry Portal**](https://ai.azure.com/managementCenter/allResources)にサインインします。
 
-1. 画面右上に表示されているアイコンをクリック、Skillableのラボウィンドウで確認、取得したアカウント情報を使用してサインインします。
+      >**注:** ツアーやチュートリアルが表示される場合は、"キャンセル"もしくはポップアップの×ボタンをクリックして閉じます。
 
-    起動したSkillableのラボウィンドウ **[Resource]** タブから確認可能です。
+   1. ポータルメニューで **新規作成** ボタンをクリックし、**プロジェクトの作成** 画面に移動します。
 
-    ![](./media/lab3/mining1-1.png)
+   1. **プロジェクトの作成** 画面では、 **AIハブリソース** を選択して **次へ** をクリックします。
 
-1. サインインが完了したら、画面右上の **[歯車]** アイコンをクリックし、[Settings]の画面に移動します。 **[Resource]** タブに切り替えて、 **[+Create a new Resource]** をクリックします。
+      ![](./media/lab1/01.png)
 
-    ![](./media/lab3/mining1-2.png)
+   1. **新しいプロジェクトの作成** の画面が表示されたら、高度なオプションを展開して以下のパラメーターを設定します。
 
-1. **[Create new Document Intelligence resource]** 画面にて、以下のパラメーターを設定します。入力が完了したら、 **[Continue]** → **[FInish]** の順にクリックしてリソースを作成します。
+      | パラメーター       | 値                                                           |
+      | ------------------ | ------------------------------------------------------------ |
+      | プロジェクト名     | project[アカウント名に含まれている数字8桁]<br />例：アカウント名=LabUser-12345678@LODSPRODMCA.onmicrosoft.com<br />であれば**project12345678** |
+      | ハブ               | 既定値（新規作成）                                           |
+      | サブスクリプション | 既定値                                                       |
+      | リソースグループ   | 既定値（新規作成）                                           |
+      | リージョン         | East US, France Central, Korea Central, West Europe, West USのいずれかを選択 |
 
-    | パラメーター      | 値                                                           |
-    | ----------------- | ------------------------------------------------------------ |
-    | Subscription      | ※既定値を使用                                                |
-    | Resource group    | Resource Group1（ドロップダウンリストから選択）              |
-    | New resource name | <任意の文字列（お名前等）>-yyyymmmdd-doc<br />※例：ftamaki-20240101-doc |
-    | Location          | West US                                                      |
-    | Pricing tier      | F0 Free<br />※Freeが選択できない場合は"S0 Standard"を選択    |
+   1. **[作成]** をクリックしてプロジェクトの作成を開始します。
 
-1. リソースの作成が完了すると[Settings]の画面へ自動的に戻り、作成したリソースが確認できます。次の作業を行うため、[Settings]の画面を閉じます。
+      ※プロジェクトの作成には時間を要する場合があります。概ね3-5分程度で作成が完了します。
+
+   1. プロジェクトの作成が完了すると、 **Azure AI Foundry Portal** へ強制的に遷移します。
+
+   1. Azure AI Foundry Portalの左側に表示されるメニューから **AIサービス** を選択します。 
+
+      ![](./media/lab1/02.png)
+
+   1. 移動した **Azure AI サービス** のページで **AI機能を使用してソリューションを活性化する** のセクションから **Visionとドキュメント** を選択します。
+
+      ![](./media/lab1/03.png)
+
+   1. **Vision + Document** の画面が表示され、Document Intelligenceの機能をテストすることが可能となっていることが確認できます。
+
+      ![](./media/lab1/04.png)
+
+
+
 ## タスク 2 : ドキュメントの分析
 
-このタスクでは、Document Intelligence Studioを使用して事前構成済みのモデルでレシートの内容を分析します。
+このタスクでは、Document Intelligence を使用して事前構成済みのモデルでレシートの内容を分析します。
 
-1. Document Intelligence  Studioのトップ画面から **[Prebuilt models]** セクション内の **[Receipts]** のタイルをクリックします。
+1. **View all other vision capabilities** セクションにて、 **Document** タブの **[Receipts]** のタイルをクリックします。
 
-    ![](./media/lab3/mining2-1.png)
+    ![](./media/lab3/01.png)
 
 1. 分析対象となるレシートを用意します。今回は以下のURLより画像をダウンロードします。
     [**https://aka.ms/mslearn-receipt**](https://aka.ms/mslearn-receipt)
@@ -64,15 +81,13 @@ Azure AI Document Intelligence は、フォームやドキュメントから情�
 
 1. ダウンロードしたレシート画像を読み込みます。画面左側の **[Browse for files]** をクリックし、ダウンロードしたファイルを選択します。
 
-    ![](./media/lab3/mining2-2.png)
-
-    
+    ![](./media/lab3/02.png)
 
 1. ファイルが読み込まれたことを確認して、 **[Run analysis]** をクリックして分析を開始します。
 
 1. 分析が完了すると画面右側に結果が表示されます。 **[Field]** タブで各項目の読み取り内容、確度を確認することができます。一部のアイテム（今回は商品明細にあたる **Item** 欄）は省略されているため、展開することが詳細を確認できます。
 
-    ![](./media/lab3/mining2-3.png)
+    ![](./media/lab3/03.png)
 
 
 
