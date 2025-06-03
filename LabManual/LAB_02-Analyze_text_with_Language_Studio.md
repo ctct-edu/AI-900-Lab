@@ -10,7 +10,7 @@ lab:
 
 Azure AI Servicesには自然言語処理(Natural Language Processing)を実行するソリューションが存在しています。Azure AI Language Serviceにはテキスト分析や自然言語処理の機能が含まれおり、テキスト内のキーフレーズ識別や、感情に基づいたテキストの分類を実行することが可能です。
 
-このラボではLanguage Studioを使用してテキストに対する自然言語分析の機能を確認します。
+このラボではAzure AI Foundry Portalを使用してテキストに対する自然言語分析の機能を確認します。
 
 ## 推定時間 : 30 分
 
@@ -18,62 +18,53 @@ Azure AI Servicesには自然言語処理(Natural Language Processing)を実行�
 
 このラボでは[Skillable](https://alh.learnondemand.net/)にて以下のラボを起動して実施してください。
 
-​	**Analyze text with Language Studio**
+​	**Analyze text in Azure AI Foundry portal (JA) / Azure AI Foundry ポータルでテキストを分析する**
 
-​	AI-900T00-A Microsoft Azure AI Fundamentals [Cloud Slice Provided], Learning Path 03 (CSS)
+​	AI-900T00-A Microsoft Azure AI Fundamentals [Cloud Slice Provided] JAPANESE, Learning Path 03 (CSS)
 
-## タスク1 : Languageリソースの作成
+## タスク1 : プロジェクトの作成
 
-このタスクでは、自然言語機能を使用するために **Language** リソースを作成します。
+このタスクでは、Azure AI Visionを使用するために**プロジェクト** を作成します。 Azure AI Foundry では、プロジェクトを作業の整理を行うためのコンテナーとして使用します。
 
-1. Skillableのラボウィンドウで確認、取得したアカウント情報を使用して [**Azure portal**](https://portal.azure.com)にサインインします。
+1. Skillableのラボウィンドウで確認、取得したアカウント情報を使用して [**Azure AI Foundry Poratl**](https://ai.azure.com/managementCenter/allResources)にサインインします。
 
-    >**注:** ツアーが開始された（"Microsoft Azureへようこそ"等の表示）場合は、"キャンセル"をクリックしてAzure Portalへ移動します。
+   >**注:** ツアーやチュートリアルが表示される場合は、"キャンセル"もしくはポップアップの×ボタンをクリックして閉じます。
 
-1. 画面上部に表示されている検索ボックスに **[Language]** と入力して、表示された **Language** サービスを選択します。
+1. ポータルメニューで **新規作成** ボタンをクリックし、**プロジェクトの作成** 画面に移動します。
 
-    ![](./media/lab2/lang1-1.png)
+1.  **プロジェクトの作成** 画面では、 **AIハブリソース** を選択して **次へ** をクリックします。
 
-1. **[Azure AI services | 言語サービス]** の画面が表示されたら、 **[+作成]** をクリックして作成画面へ移動します。
+   ![](C:\Users\z2215109\Documents\GitHub\AI-900-Lab\LabManual\media\lab1\01.png)
 
-1. **[追加機能の選択]** 画面が表示されますが、そのまま画面下部の **[リソースの作成を続行する]** をクリックします。
+1. **新しいプロジェクトの作成** の画面が表示されたら、高度なオプションを展開して以下のパラメーターを設定します。
 
-1. **[言語の作成]** 画面にて、以下のパラメーターを設定してリソースを作成します。
+   | パラメーター       | 値                                                           |
+   | ------------------ | ------------------------------------------------------------ |
+   | プロジェクト名     | project[アカウント名に含まれている数字8桁]<br />例：アカウント名=LabUser-12345678@LODSPRODMCA.onmicrosoft.com<br />であれば**project12345678** |
+   | ハブ               | 既定値（新規作成）                                           |
+   | サブスクリプション | 既定値                                                       |
+   | リソースグループ   | 既定値（新規作成）                                           |
+   | リージョン         | East US, France Central, Korea Central, West Europe, West USのいずれかを選択 |
 
-    | パラメーター                        | 値                                                           |
-    | ----------------------------------- | ------------------------------------------------------------ |
-    | サブスクリプション                  | ※既定値を使用                                                |
-    | リソースグループ                    | Resource Group1（ドロップダウンリストから選択）              |
-    | リージョン                          | West US                                                      |
-    | 名前                                | <任意の文字列（お名前等）>-yyyymmmdd-lang<br />※例：ftamaki-20240101-lang |
-    | 価格レベル                          | Free F0<br />※Freeが選択できない場合は"S"を選択              |
-    | このボックスをオンにすることで..... | チェックボックスをオン                                       |
+1. **[作成]** をクリックしてプロジェクトの作成を開始します。
 
-1. **[確認と作成]** をクリックして検証の完了を待ちます。検証が完了したら、**[作成]** のボタンをクリックしてリソースを作成します。
+   ※プロジェクトの作成には時間を要する場合があります。概ね3-5分程度で作成が完了します。
 
-    ※検証が完了しない、もしくは失敗する場合は今回の内容では名前が原因の可能性があります。基本タブに戻り、名前を別の値に変更してください。
+1. プロジェクトの作成が完了すると、 **Azure AI Foundry Portal** へ強制的に遷移します。
 
-1. リソースの作成が完了したら、 **[リソースに移動]** をクリックして、作成した **Language** の画面へ移動します。
-## タスク 2 : Language Studioへのアクセス
+1. Azure AI Foundry Portalの左側に表示されるメニューから **AIサービス** を選択します。 
 
-ひとつ前のタスクで作成したAzure AI services multi-service accountをVision Studioに接続し、サービスへアクセスします。 
+   ![](C:\Users\z2215109\Documents\GitHub\AI-900-Lab\LabManual\media\lab1\02.png)
 
-1. ブラウザでAzure Portalとは別のタブを使用して、[Language Studio](https://language.cognitive.azure.com)にアクセスします。 
+1. 移動した **Azure AI サービス** のページで **AI機能を使用してソリューションを活性化する** のセクションから **Visionとドキュメント** を選択します。
 
-1. 移動したVision Studioのページで右上の **Sign in** をクリックしてサインインします。
+   ![](C:\Users\z2215109\Documents\GitHub\AI-900-Lab\LabManual\media\lab1\03.png)
 
-    再度アカウント情報が求められた場合は、Azure Portalへのサインインに使用したSkillable発行のアカウント情報を入力します。
+1. **Vision + Document** の画面が表示され、Visionの機能をテストすることが可能となっていることが確認できます。
 
-    ※Welcome～のポップアップが表示された場合はそのまま閉じて進めてください
+   ![](./media/lab1/04.png)
 
-1. リソース選択のポップアップは閉じずに以下の項目を設定します。設定が完了したら **[Done]** をクリックします。
 
-    | パラメーター       | 値                                                           |
-    | ------------------ | ------------------------------------------------------------ |
-    | Azure directory    | ※既定値                                                      |
-    | Azure subscription | ※既定値（ドロップダウンリストから選択）                      |
-    | Resource Type      | Language                                                     |
-    | Resource Name      | <任意の文字列（お名前等）>-yyyymmmdd-lang<br />※前のタスクで設定した名前 |
 
 ## タスク 3 : テキスト感情分析
 
