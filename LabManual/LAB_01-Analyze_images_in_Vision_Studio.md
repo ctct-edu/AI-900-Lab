@@ -4,7 +4,7 @@ lab:
   module: Module02 Computer Vision
 ---
 
-# ラボ 01 - Vision Studioでイメージ分析を行う
+# ラボ 01 - Vision を使用してイメージ分析を行う
 
 ## ラボ概要
 

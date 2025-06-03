@@ -1,10 +1,10 @@
 ---
 lab:
-  title: 'ラボ 02: Language Studio を使用してテキストを分析する'
+  title: 'ラボ 02: Languageを使用してテキストを分析する'
   module: Module03 Natural Language Processing
 ---
 
-# ラボ 02 - Language Studio を使用してテキストを分析する
+# ラボ 02 - Languageを使用してテキストを分析する
 
 ## ラボ概要
 
