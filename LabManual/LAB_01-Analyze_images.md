@@ -1,6 +1,6 @@
 ---
 lab:
-  title: 'ラボ 01: Visionを使用してイメージ分析を行う'
+  title: 'ラボ 01: Analyze images'
   module: Module02 Computer Vision
 ---
 

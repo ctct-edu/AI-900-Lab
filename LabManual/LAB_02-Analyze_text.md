@@ -1,6 +1,6 @@
 ---
 lab:
-  title: 'ラボ 02: Languageを使用してテキストを分析する'
+  title: 'ラボ 02: Analyze text'
   module: Module03 Natural Language Processing
 ---
 

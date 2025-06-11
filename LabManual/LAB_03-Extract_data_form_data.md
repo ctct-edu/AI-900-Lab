@@ -1,10 +1,10 @@
 ---
 lab:
-  title: 'ラボ 03: Extract form data in Document Intelligence Studio'
-  module: Module04 Knowledge Mining
+  title: 'ラボ 03: Extract data from data'
+  module: Module05 Generative AI
 ---
 
-# ラボ 03 - Document Intelligenceを使用してドキュメントを分析する
+# ラボ 04 - Document Intelligenceを使用してドキュメントを分析する
 
 ## ラボ概要
 
