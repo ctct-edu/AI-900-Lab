@@ -1,7 +1,7 @@
 ---
 lab:
   title: 'ラボ 04: Explore generative AI'
-  module: Module04 Knowledge Mining
+  module: Module05 Generative AI
 ---
 
 # ラボ 04 - 生成AIモデルをテストする

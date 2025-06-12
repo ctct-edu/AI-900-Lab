@@ -1,7 +1,7 @@
 ---
 lab:
-  title: 'ラボ 03: Extract data from data'
-  module: Module05 Generative AI
+  title: 'ラボ 03: Extract data from document'
+  module: Module04 Knowledge Mining
 ---
 
 # ラボ 04 - Document Intelligenceを使用してドキュメントを分析する
