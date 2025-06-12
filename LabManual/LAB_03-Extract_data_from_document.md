@@ -54,14 +54,17 @@ Azure AI Document Intelligence は、フォームやドキュメントから情�
 
    1. プロジェクトの作成が完了すると、 **Azure AI Foundry Portal** へ強制的に遷移します。
 
+      >注：強制的に遷移されなかった場合は、以下のリンクにアクセスすることで確認可能です。
+      >https://ai.azure.com/
+   
    1. Azure AI Foundry Portalの左側に表示されるメニューから **AIサービス** を選択します。 
-
+   
       ![](./media/lab1/02.png)
-
+   
    1. 移動した **Azure AI サービス** のページで **AI機能を使用してソリューションを活性化する** のセクションから **Visionとドキュメント** を選択します。
-
+   
       ![](./media/lab1/03.png)
-
+   
    1. **Vision + Document** の画面が表示され、Document Intelligenceの機能をテストすることが可能となっていることが確認できます。
    
       ![](./media/lab1/04.png)
