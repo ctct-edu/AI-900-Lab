@@ -24,15 +24,15 @@ lab:
 
 1. ## タスク1 : プロジェクトの作成とモデルの展開
 
-   このタスクでは、生成AIモデルを展開するために**プロジェクト** を作成します。 Azure AI Foundry では、プロジェクトを作業の整理を行うためのコンテナーとして使用します。
+   このタスクでは、生成AIモデルを展開するために**プロジェクトとハブリソース** を作成します。 Azure AI Foundry では、プロジェクトを作業の整理を行うためのコンテナーとして使用します。
 
-   1. Skillableのラボウィンドウで確認、取得したアカウント情報を使用して [**Azure AI Foundry Portal**](https://ai.azure.com/managementCenter/allResources) (ai.azure.com/managementCenter/allResources)にサインインします。
+   1. Skillableのラボウィンドウで確認、取得したアカウント情報を使用して [**Azure AI Foundry Portal**](https://ai.azure.com/managementCenter/allResources)  (https://ai.azure.com/managementCenter/allResources)にサインインします。
 
       >**注:** ツアーやチュートリアルが表示される場合は、"キャンセル"もしくはポップアップの×ボタンをクリックして閉じます。
       >
       >Azure Portalの言語が英語になっている場合は、ログイン後の画面上部右側"歯車アイコン"をクリックし、画面左側の"Language + Regions"から日本語(Japanese)へ変更することが可能です。
 
-   1. ポータルメニューで **新規作成** ボタンをクリックし、**プロジェクトの作成** 画面に移動します。
+   1. 管理センター上部に表示されている **新規作成** ボタンをクリックし、**プロジェクトの作成** 画面に移動します。
 
    1. **プロジェクトの作成** 画面では、 **AIハブリソース** を選択して **次へ** をクリックします。
 
@@ -44,9 +44,9 @@ lab:
       | ------------------ | ------------------------------------------------------------ |
       | プロジェクト名     | **project[アカウント名に含まれている数字8桁]**<br />例：アカウント名=LabUser-12345678@LODSPRODMCA.onmicrosoft.com<br />であれば**project12345678** |
       | ハブ               | **hub[アカウント名に含まれている数字8桁]**<br />例：アカウント名=LabUser-12345678@LODSPRODMCA.onmicrosoft.com<br />であれば**hub12345678** |
-      | サブスクリプション | 既定値                                                       |
-      | リソースグループ   | 既定値（新規作成）                                           |
-      | リージョン         | East US, France Central, Korea Central, West Europe, West USのいずれかを選択 |
+      | サブスクリプション | 既定値(MOC Subscription-lodXXXXXXXXなど)                     |
+      | リソースグループ   | 既定値(rg-projectXXXXXXXXなど)                               |
+      | リージョン         | **East US, France Central, Korea Central, West Europe, West US**のいずれかを選択 |
 
    1. **[作成]** をクリックしてプロジェクトの作成を開始します。
 

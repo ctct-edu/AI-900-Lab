@@ -24,15 +24,15 @@ Azure AI Visionには、画像の内容やコンテキストを分析して情�
 
 ## タスク1 : プロジェクトの作成
 
-このタスクでは、Azure AI Visionを使用するために**プロジェクト** を作成します。 Azure AI Foundry では、プロジェクトを作業の整理を行うためのコンテナーとして使用します。
+このタスクでは、Azure AI Visionを使用するために**プロジェクトとハブリソース** を作成します。 Azure AI Foundry では、プロジェクトを作業の整理を行うためのコンテナーとして使用します。
 
-1. Skillableのラボウィンドウで確認、取得したアカウント情報を使用して [**Azure AI Foundry Portal**](https://ai.azure.com/managementCenter/allResources) (ai.azure.com/managementCenter/allResources)にサインインします。
+1. Skillableのラボウィンドウで確認、取得したアカウント情報を使用して [**Azure AI Foundry Portal**](https://ai.azure.com/managementCenter/allResources)  (https://ai.azure.com/managementCenter/allResources)にサインインします。
 
     >**注:** ツアーやチュートリアルが表示される場合は、"キャンセル"もしくはポップアップの×ボタンをクリックして閉じます。
     >
     >Azure Portalの言語が英語になっている場合は、ログイン後の画面上部右側"歯車アイコン"をクリックし、画面左側の"Language + Regions"から日本語(Japanese)へ変更することが可能です。
 
-1. ポータルメニューで **新規作成** ボタンをクリックし、**プロジェクトの作成** 画面に移動します。
+1. 管理センター上部に表示されている **新規作成** ボタンをクリックし、**プロジェクトの作成** 画面に移動します。
 
 1. **プロジェクトの作成** 画面では、 **AIハブリソース** を選択して **次へ** をクリックします。
 
@@ -42,11 +42,11 @@ Azure AI Visionには、画像の内容やコンテキストを分析して情�
 
     | パラメーター       | 値                                                           |
     | ------------------ | ------------------------------------------------------------ |
-    | プロジェクト名     | project[アカウント名に含まれている数字8桁]<br />例：アカウント名=LabUser-12345678@LODSPRODMCA.onmicrosoft.com<br />であれば**project12345678** |
-    | ハブ               | **hub[アカウント名に含まれている数字8桁]**<br />例：アカウント名=LabUser-12345678@LODSPRODMCA.onmicrosoft.com<br />であれば**hub12345678** |
-    | サブスクリプション | 既定値                                                       |
-    | リソースグループ   | 既定値（新規作成）                                           |
-    | リージョン         | East US, France Central, Korea Central, West Europe, West USのいずれかを選択 |
+    | プロジェクト名     | **project[アカウント名に含まれている数字8桁]**<br />例：アカウント名=LabUser-12345678@LODSPRODMCA.onmicrosoft.com<br />であれば**project12345678** |
+    | ハブ               | **hub[アカウント名に含まれている数字8桁]**<br />例：アカウント名=LabUser-12345678@LODSPRODMCA.onmicrosoft.com<br />であれば**hub12345678**<br />※**ハブの名前を変更する** をクリックして変更 |
+    | サブスクリプション | 既定値(MOC Subscription-lodXXXXXXXXなど)                     |
+    | リソースグループ   | 既定値(rg-projectXXXXXXXXなど)                               |
+    | リージョン         | **East US, France Central, Korea Central, West Europe, West US**のいずれかを選択 |
 
 1. **[作成]** をクリックしてプロジェクトの作成を開始します。
 
@@ -54,10 +54,12 @@ Azure AI Visionには、画像の内容やコンテキストを分析して情�
 
 1. プロジェクトの作成が完了すると、 **Azure AI Foundry Portal** へ強制的に遷移します。
 
-    > 注：強制的に遷移されなかった場合は、以下のリンクにアクセスすることで確認可能です。
+    > 注：強制的に遷移されなかった場合は、以下のURLにアクセスすることで確認可能です。
     > https://ai.azure.com/
 
 1. Azure AI Foundry Portalの左側に表示されるメニューから **AIサービス** を選択します。 
+
+    > 注：AIサービスが表示されない場合は、AIハブリソースが作成されていない可能性があります。Azure Portal(https://portal.azure.com)に移動し、リソースグループ内にAIハブリソースが作成されているかを確認し、Azure AI Foudry、Azure AI Foudry Projectなど一部のリソースしか作成されていない場合はAzure AI Foundryプロジェクトが作成されている可能性があります。上記のハブ作成手順を確認し、再度実行してください。
 
     ![](./media/lab1/02.png)
 
