@@ -29,6 +29,8 @@ Azure AI Document Intelligence は、フォームやドキュメントから情�
    1. Skillableのラボウィンドウで確認、取得したアカウント情報を使用して [**Azure AI Foundry Portal**](https://ai.azure.com/managementCenter/allResources)にサインインします。
 
       >**注:** ツアーやチュートリアルが表示される場合は、"キャンセル"もしくはポップアップの×ボタンをクリックして閉じます。
+      >
+      >Azure Portalの言語が英語になっている場合は、ログイン後の画面上部右側"歯車アイコン"をクリックし、画面左側の"Language + Regions"から日本語(Japanese)へ変更することが可能です。
 
    1. ポータルメニューで **新規作成** ボタンをクリックし、**プロジェクトの作成** 画面に移動します。
 
@@ -37,7 +39,7 @@ Azure AI Document Intelligence は、フォームやドキュメントから情�
       ![](./media/lab1/01.png)
 
    1. **新しいプロジェクトの作成** の画面が表示されたら、高度なオプションを展開して以下のパラメーターを設定します。
-
+   
       | パラメーター       | 値                                                           |
       | ------------------ | ------------------------------------------------------------ |
       | プロジェクト名     | project[アカウント名に含まれている数字8桁]<br />例：アカウント名=LabUser-12345678@LODSPRODMCA.onmicrosoft.com<br />であれば**project12345678** |
@@ -61,7 +63,7 @@ Azure AI Document Intelligence は、フォームやドキュメントから情�
       ![](./media/lab1/03.png)
 
    1. **Vision + Document** の画面が表示され、Document Intelligenceの機能をテストすることが可能となっていることが確認できます。
-
+   
       ![](./media/lab1/04.png)
 
 
