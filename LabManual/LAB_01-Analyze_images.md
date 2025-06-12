@@ -18,9 +18,9 @@ Azure AI Visionには、画像の内容やコンテキストを分析して情�
 
 このラボでは[Skillable](https://alh.learnondemand.net/)にて以下のラボを起動して実施してください。
 
-​	**Analyze images in Azure AI Foundry portal (JA) / Azure AI Foundry ポータルで画像を分析する **
+​	**Explore generative AI in Azure AI Foundry Portal (JA) / Azure AI Foundry ポータルで生成 AI を探索する **
 
-​	 AI-900T00-A Microsoft Azure AI Fundamentals [Cloud Slice Provided] JAPANESE, Learning Path 02 (CSS)
+​	AI-900T00-A Microsoft Azure AI Fundamentals [Cloud Slice Provided] JAPANESE, Learning Path 05 (CSS)
 
 ## タスク1 : プロジェクトの作成
 
@@ -43,7 +43,7 @@ Azure AI Visionには、画像の内容やコンテキストを分析して情�
     | パラメーター       | 値                                                           |
     | ------------------ | ------------------------------------------------------------ |
     | プロジェクト名     | project[アカウント名に含まれている数字8桁]<br />例：アカウント名=LabUser-12345678@LODSPRODMCA.onmicrosoft.com<br />であれば**project12345678** |
-    | ハブ               | 既定値（新規作成）                                           |
+    | ハブ               | **hub[アカウント名に含まれている数字8桁]**<br />例：アカウント名=LabUser-12345678@LODSPRODMCA.onmicrosoft.com<br />であれば**hub12345678** |
     | サブスクリプション | 既定値                                                       |
     | リソースグループ   | 既定値（新規作成）                                           |
     | リージョン         | East US, France Central, Korea Central, West Europe, West USのいずれかを選択 |
