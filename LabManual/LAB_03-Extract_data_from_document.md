@@ -4,7 +4,7 @@ lab:
   module: Module04 Knowledge Mining
 ---
 
-# ラボ 04 - Document Intelligenceを使用してドキュメントを分析する
+# ラボ 03 - Document Intelligenceを使用してドキュメントを分析する
 
 ## ラボ概要
 
